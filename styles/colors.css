@@ -1,0 +1,54 @@
+
+/* Reset */
+:root{
+  --p-color:#131313;
+  --s-color:#191919;
+}
+html, body{background:#000000; color:#ffffff;}
+
+/* Color */
+.color-black, .h-color-black:hover{color:#000000!important;}
+.color-white, .h-color-white:hover{color:#ffffff!important;}
+.color-dark, .h-color-dark:hover{color:#191919!important;}
+.color-gray, .h-color-gray:hover{color:#777777!important;}
+.color-fgray, .h-color-fgray:hover{color:#e4e4e4!important;}
+.color-p, .h-color-p:hover{color:var(--p-color)!important;}
+.color-s, .h-color-s:hover{color:var(--s-color)!important;}
+.color-info, .h-color-info:hover{color:#5a8dee!important;}
+.color-success, .h-color-success:hover{color:#4ecc48!important;}
+.color-warning, .h-color-warning:hover{color:#ecb403!important;}
+.color-danger, .h-color-danger:hover{color:#f5334f!important;}
+.color-01, .h-color-01:hover{color:#dddddd!important;}
+
+
+.bg-black{background:#000000!important;}
+.bg-white{background:#ffffff!important;}
+.bg-dark{background:#191919!important;}
+.bg-gray{background:#777777!important;}
+.bg-fgray{background:#e4e4e4!important;}
+.bg-p{background:var(--p-color)!important;}
+.bg-s{background:var(--s-color)!important;}
+.bg-info{background:#5a8dee!important;}
+.bg-success{background:#4ecc48!important;}
+.bg-warning{background:#ecb403!important;}
+.bg-danger{background:#f5334f!important;}
+
+.bcolor-black{border-color:#000000!important;}
+.bcolor-white{border-color:#ffffff!important;}
+.bcolor-dark{border-color:#191919!important;}
+.bcolor-gray{border-color:#777777!important;}
+.bcolor-fgray{border-color:#e4e4e4!important;}
+.bcolor-p{border-color:var(--p-color)!important;}
+.bcolor-s{border-color:var(--s-color)!important;}
+.bcolor-info{border-color:#5a8dee!important;}
+.bcolor-success{border-color:#4ecc48!important;}
+.bcolor-warning{border-color:#ecb403!important;}
+.bcolor-danger{border-color:#f5334f!important;}
+
+
+/* Background Overlay */
+.banner-01 .swiper-slide .img-bg::before{background:#000;}
+
+
+/* Special Sub Title */
+.ss-sub-title .circle{background:#ffffff;}

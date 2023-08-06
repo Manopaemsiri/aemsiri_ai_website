@@ -1,0 +1,15 @@
+/* Banner 01 */
+.banner-01{position:relative; cursor:pointer;}
+.banner-01 .swiper-slide{position:relative; height:600px;}
+.banner-01 .swiper-slide .img-bg{
+  position:absolute; top:0; right:0; bottom:0; left:0; height:100%;
+  background-size:cover; background-position:center; 
+}
+.banner-01 .swiper-slide .img-bg::before{
+  position:absolute; content:""; top:0; left:0; pointer-events:none;
+  width:100%; height:100%; z-index:2; opacity:0.3;
+}
+.banner-01 .swiper-slide .text-wrapper{
+  position:relative; z-index:3; padding:5rem; display:flex;
+  justify-content:flex-end; flex-direction:column; height:100%;
+}

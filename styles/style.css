@@ -1,0 +1,146 @@
+/* Reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font-anton: 'Anton', sans-serif;;
+  --font-poppins: 'Poppins', sans-serif;;
+}
+
+
+/* Font Family */
+.font-anton{font-family:var(--font-anton);}
+.font-poppins{font-family:var(--font-poppins);}
+
+
+html, body{
+  position: relative; padding:0; margin:0; overflow-x:hidden; overflow-y:auto;
+  font-size:16px; font-weight:300; line-height:1.6; font-family: 'Poppins', sans-serif;
+}
+
+*{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;}
+
+
+/* Section & Container */
+.section-padding{padding:4rem 0;}
+@media screen and (max-width:1199.98px){
+  .section-padding{padding:3.5rem 0;}
+}
+@media screen and (max-width:991.98px){
+  .section-padding{padding:3rem 0;}
+}
+@media screen and (max-width:767.98px){
+  .section-padding{padding:3rem 0;}
+}
+@media screen and (max-width:575.98px){
+  .section-padding{padding:2.5rem 0;}
+}
+@media screen and (max-width:414.98px){
+  .section-padding{padding:2rem 0;}
+}
+
+
+/* Typography */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, label{
+  margin:0; line-height:1.62;
+}
+h1, .h1{font-size:4rem; line-height:1.1;}
+h2, .h2{font-size:3.5rem; line-height:1.1;}
+h3, .h3{font-size:2.75rem; line-height:1.2;}
+h4, .h4{font-size:2rem; line-height:1.4;}
+h5, .h5{font-size:1.75rem; line-height:1.5;}
+h6, .h6{font-size:1.25rem;}
+p.lg, .p.lg, li.lg, label.lg{font-size:1.0625rem;}
+p, .p, li, label{font-size:1rem;}
+p.sm, .p.sm, li.sm, label.sm{font-size:.9375rem;}
+p.xs, .p.xs, li.xs, label.xs{font-size:.875rem;}
+p.xxs, .p.xxs, li.xxs, label.xxs{font-size:.8125rem;}
+@media screen and (max-width:1199.98px){
+h1, .h1{font-size:3.625rem; line-height:1.15;}
+h3, .h3{font-size:2.5rem; line-height:1.25;}
+h4, .h4{font-size:1.875rem; line-height:1.4;}
+h5, .h5{font-size:1.625rem; line-height:1.55;}
+}
+@media screen and (max-width:991.98px){
+h1, .h1{font-size:3.25rem; line-height:1.2;}
+h3, .h3{font-size:2.25rem; line-height:1.3;}
+h4, .h4{font-size:1.75rem; line-height:1.45;}
+h5, .h5{font-size:1.5rem; line-height:1.62;}
+}
+@media screen and (max-width:767.98px){
+h1, .h1{font-size:2.875rem; line-height:1.25;}
+h3, .h3{font-size:2rem; line-height:1.35;}
+h4, .h4{font-size:1.625rem; line-height:1.5;}
+h5, .h5{font-size:1.375rem; line-height:1.62;}
+}
+@media screen and (max-width:575.98px){
+h1, .h1{font-size:2.5rem; line-height:1.3;}
+h3, .h3{font-size:1.75rem; line-height:1.4;}
+p.lg, .p.lg, li.lg, label.lg{font-size:1rem;}
+}
+
+
+/* Hamburger */
+.hamburger{cursor:pointer;}
+.hamburger > *{width:2rem; height:.14rem; transition:all .5s;}
+.hamburger > *:nth-child(2){margin:.375rem 0;}
+.hamburger.active > *:nth-child(1){
+	-webkit-transform:rotate(-45deg)translate(-.375rem, .375rem);
+	transform:rotate(-45deg)translate(-.375rem, .375rem);
+}
+.hamburger.active > *:nth-child(2){opacity:0;}
+.hamburger.active > *:nth-child(3){
+	-webkit-transform:rotate(45deg)translate(-.375rem,-.375rem);
+	transform:rotate(45deg)translate(-.375rem, -.375rem);
+}
+
+
+/* Special Sub Title */
+.ss-sub-title{display:flex; align-items:center;}
+.ss-sub-title .circle{
+  display:block; width:1rem; height:1rem; border-radius:50%;
+  margin-right:.5rem;
+}
+
+
+/* Special Text Wrapper */
+.ss-text-wrapper{display:block; width:100%; max-width:52rem;}
+.ss-text-wrapper.size-lg{max-width:62rem;}
+.ss-text-wrapper.size-md{max-width:42rem;}
+.ss-text-wrapper.size-sm{max-width:38rem;}
+.ss-text-wrapper.size-sm.m-auto{max-width:38rem; margin:0 auto;}
+.ss-text-wrapper.size-xs{max-width:34rem;}
+
+
+/* Special Card */
+.ss-card{display:block; width:100%;}
+.ss-card .text-container .title, .ss-card .text-container .desc{
+  display:block; display:-webkit-box; text-overflow:ellipsis; overflow:hidden;
+  -webkit-box-orient:vertical; transition:color .25s;
+}
+
+
+/* Special Image */
+.ss-img{display:block; position:relative; width:100%; padding:64% 0 0 0; overflow:hidden;}
+.ss-img.square{padding:100% 0 0 0;}
+.ss-img.horizontal{padding:50% 0 0 0;}
+.ss-img.horizontal-02{padding:45% 0 0 0;}
+.ss-img.vertical{padding:120% 0 0 0;}
+.ss-img.vertical-02{padding:140% 0 0 0;}
+.ss-img > .img-bg{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+    background-position:center; transition:transform .25s, filter .25s;
+}
+.ss-card:hover .ss-img:not(.no-hover) > .img-bg,
+.ss-img:not(.no-hover):hover > .img-bg{transform:scale(1.1);}
+
+
+/* Special Card 01 */
+
+
+
+/* Special Text */
