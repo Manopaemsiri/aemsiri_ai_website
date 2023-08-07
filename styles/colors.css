@@ -19,6 +19,7 @@ html, body{background:#000000; color:#ffffff;}
 .color-warning, .h-color-warning:hover{color:#ecb403!important;}
 .color-danger, .h-color-danger:hover{color:#f5334f!important;}
 .color-01, .h-color-01:hover{color:#dddddd!important;}
+.color-02, .h-color-02:hover{color:#ffffff1a!important;}
 
 
 .bg-black{background:#000000!important;}
@@ -32,6 +33,9 @@ html, body{background:#000000; color:#ffffff;}
 .bg-success{background:#4ecc48!important;}
 .bg-warning{background:#ecb403!important;}
 .bg-danger{background:#f5334f!important;}
+.bg-01{background:#dddddd!important;}
+.bg-02{background:#ffffff1a!important;}
+
 
 .bcolor-black{border-color:#000000!important;}
 .bcolor-white{border-color:#ffffff!important;}
@@ -44,6 +48,8 @@ html, body{background:#000000; color:#ffffff;}
 .bcolor-success{border-color:#4ecc48!important;}
 .bcolor-warning{border-color:#ecb403!important;}
 .bcolor-danger{border-color:#f5334f!important;}
+.bcolor-01{border-color:#dddddd!important;}
+.bcolor-02{border-color:#ffffff1a!important;}
 
 
 /* Background Overlay */
@@ -52,3 +58,12 @@ html, body{background:#000000; color:#ffffff;}
 
 /* Special Sub Title */
 .ss-sub-title .circle{background:#ffffff;}
+
+
+/* Special Card 01 */
+.ss-card-01{border-color:#ffffff1a;}
+.ss-card-01 .icon > svg{fill:#f7e0c7;}
+
+
+/* Letter Stroke */
+.letter-stroke{-webkit-text-stroke:1px #ffffff!important;}

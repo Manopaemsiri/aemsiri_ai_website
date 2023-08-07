@@ -27,6 +27,7 @@ html, body{
 
 /* Section & Container */
 .section-padding{padding:4rem 0;}
+.container{max-width:100%;}
 @media screen and (max-width:1199.98px){
   .section-padding{padding:3.5rem 0;}
 }
@@ -109,11 +110,14 @@ p.lg, .p.lg, li.lg, label.lg{font-size:1rem;}
 
 /* Special Text Wrapper */
 .ss-text-wrapper{display:block; width:100%; max-width:52rem;}
+.ss-text-wrapper.mr{margin:0 0 0 auto}
 .ss-text-wrapper.size-lg{max-width:62rem;}
 .ss-text-wrapper.size-md{max-width:42rem;}
 .ss-text-wrapper.size-sm{max-width:38rem;}
 .ss-text-wrapper.size-sm.m-auto{max-width:38rem; margin:0 auto;}
 .ss-text-wrapper.size-xs{max-width:34rem;}
+.ss-text-wrapper.size-2xs{max-width:25rem;}
+.ss-text-wrapper.size-xxs{max-width:15rem;}
 
 
 /* Special Card */
@@ -140,7 +144,39 @@ p.lg, .p.lg, li.lg, label.lg{font-size:1rem;}
 
 
 /* Special Card 01 */
+.ss-card-01{padding:2rem; border:1px solid transparent;}
+.ss-card-01.card-left{border-width:0 0 0 1px;}
+.ss-card-01.card-center{border-width:0 1px 0 1px;}
+.ss-card-01.card-right{border-width:0 1px 0 0;}
+.ss-card-01 .wrapper{display:flex; justify-content:center;}
+.ss-card-01 .wrapper > .icon{width:4.3125rem; height:4.3125rem;}
+.ss-card-01 .wrapper > .icon svg{
+  display:block; max-width:100%; width:auto; max-height:auto; height:auto;
+}
+.ss-card-01 .wrapper > .text{width:calc(100% - 4.3125rem); padding-left:1rem;}
+@media screen and (max-width:1299.98px){
+  .ss-card-01{padding:2rem 1.5rem;}
+}
+@media screen and (max-width:1199.98px){
+  .ss-card-01{padding:2rem 1rem;}
+}
+@media screen and (max-width:991.98px){
+  .ss-card-01 .wrapper{flex-direction:column;}
+  .ss-card-01 .wrapper > .icon{width:4rem; height:4rem; margin:0 auto;}
+  .ss-card-01 .wrapper > .text{
+    width:100%; padding-left:0; margin-top:.75rem; text-align:center;
+  }
+  .ss-card-01 .wrapper > .text .ss-text-wrapper{margin:0 auto;}
+}
+@media screen and (max-width:767.98px){
+  .ss-card-01{border:none;}
+}
+@media screen and (max-width:575.98px){
+  .ss-card-01{padding:1.5rem 1.5rem;}
+  .ss-card-01 .wrapper > .icon{width:3.875rem; height:3.875rem;}
+}
 
 
 
-/* Special Text */
+/* Letter Stroke */
+.letter-stroke{color:transparent;}

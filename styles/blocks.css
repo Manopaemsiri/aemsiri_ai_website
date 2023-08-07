@@ -13,3 +13,12 @@
   position:relative; z-index:3; padding:5rem; display:flex;
   justify-content:flex-end; flex-direction:column; height:100%;
 }
+
+
+/* Section 01 */
+.section-01 .text-container{padding-right:1rem;}
+.section-01 .margin-right-negative{position:relative; margin-right:-5rem; z-index:2;}
+@media screen and (max-width:767.98px){
+  .section-01 .margin-right-negative{margin-right:0; text-align:center;}
+  .section-01 .text-container > .ss-text-wrapper{margin:1rem auto; text-align:center;}
+}
