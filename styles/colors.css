@@ -65,5 +65,11 @@ html, body{background:#000000; color:#ffffff;}
 .ss-card-01 .icon > svg{fill:#f7e0c7;}
 
 
+/* Special Card 02 */
+.ss-card-02{border-color:#ffffff1a;}
+.ss-card-02 .icon > svg{fill:#f7e0c7;}
+.ss-card-02 .title{border-color:#ffffff1a;}
+
+
 /* Letter Stroke */
 .letter-stroke{-webkit-text-stroke:1px #ffffff!important;}
