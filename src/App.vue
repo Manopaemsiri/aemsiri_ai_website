@@ -104,7 +104,7 @@
         </div>
         <div class="md:col-span-6 font-anton col-span-12">
           <div class="ss-img">
-            <div class="img-bg" :style="{backgroundImage:'url(/public/assets/img/content/01.jpg)'}"></div>
+            <div class="img-bg" :style="{backgroundImage:'url(/public/assets/banner/10.png)'}"></div>
           </div>
         </div>
       </div>
@@ -112,6 +112,7 @@
   </section>
   <!-- End About -->
 
+  <!-- Service -->
   <section class="section-padding bg-p">
     <div class="container">
       <div class="ss-sub-title">
@@ -178,6 +179,114 @@
       </div>
     </div>
   </section>
+  <!-- End Service -->
+
+  <section class="section-padding section-02 bg-p">
+    <div class="container">
+      <div class="grid grid-cols-12">
+        <div class="lg:col-span-6 md:col-span-5 sm:col-span-12 col-span-12">
+          <div class="ss-img h-full">
+            <div class="img-bg" :style="{backgroundImage:'url(/public/assets/img/content/superman.png)'}"></div>
+          </div>
+        </div>
+        <div class="lg:col-span-6 md:col-span-7 sm:col-span-12 col-span-12">
+          <div class="text-container bg-s">
+            <div class="ss-sub-title">
+              <div class="circle"></div>
+              <span class="font-medium uppercase tracking-widest">technology</span>
+            </div>
+            <h3 class="uppercase">
+              How is your
+            </h3>
+            <p class="h3 uppercase">
+              Visual <span class="font-semibold">Identity ?</span>
+            </p>
+            <p class="mt-5">
+              Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit
+              laborum. Sed ut perspiciatis unde omnis iste natus sit .           
+            </p>
+            <p class="mt-3">
+              Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt
+            </p>
+            <div class="ss-list-01 mt-3">
+              <div class="list-wrapper">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path fill="white" d="m0 11l2-2l5 5L18 3l2 2L7 18z"/>
+                  </svg>
+                </div>
+                <div class="text">
+                  Beautiful and easy to understand UI
+                </div>
+              </div>
+              <div class="list-wrapper mt-3">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path fill="white" d="m0 11l2-2l5 5L18 3l2 2L7 18z"/>
+                  </svg>
+                </div>
+                <div class="text">
+                  Theme advantages are pixel perfect design 
+                </div>
+              </div>
+              <div class="list-wrapper mt-3">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path fill="white" d="m0 11l2-2l5 5L18 3l2 2L7 18z"/>
+                  </svg>
+                </div>
+                <div class="text">
+                  Present your services with flexible 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-s">
+    <div class="container">
+      <div class="ss-sub-title">
+        <div class="circle"></div>
+        <span class="font-medium uppercase tracking-widest">our work</span>
+      </div>
+      <h3 class="uppercase">
+        our latest
+      </h3>
+      <p class="h3 uppercase">
+        Awesome <span class="font-semibold">Design</span>
+      </p>
+      <swiper class="mt-5"
+        :slides-per-view="2.5"
+        :space-between="45"
+       >
+        <swiper-slide v-for="(image, index) in content" :key="index">
+          <div class="ss-card">
+            <div class="ss-img">
+              <div class="img-bg" :style="{backgroundImage:'url('+ image + ')'}"></div>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <!-- <div class="ss-sub-title">
+              <div class="circle"></div>
+              <span class="font-medium">Production</span>
+            </div> -->
+            <!-- <h1 class="uppercase font-medium font-anton text-8xl">headphones</h1>  
+            <p class="ss-text-wrapper size-md mt-3 color-01">
+              ABOUT THE PROJECT Mode is an audio range designed 
+              to provide optimal performance
+              and comfort for every mode of use.                   
+            </p>  -->
+          </div>
+        </swiper-slide>
+      </swiper>
+    </div>
+  </section>
+
 </template>
 
 <script>
@@ -191,9 +300,16 @@
     data() {
       return {
         imgBg: [
-          '/public/assets/banner/01.jpg', 
-          '/public/assets/banner/02.jpg',
+          '/public/assets/banner/08.png', 
+          '/public/assets/banner/09.png',
           '/public/assets/banner/03.jpg',
+          '/public/assets/banner/04.jpg',
+          '/public/assets/banner/05.jpg',
+          '/public/assets/banner/06.jpg'
+        ], content: [
+          '/public/assets/img/content/horse.png', 
+          '/public/assets/img/content/squirrel.png',
+          '/public/assets/img/content/snake.png',
           '/public/assets/banner/04.jpg',
           '/public/assets/banner/05.jpg',
           '/public/assets/banner/06.jpg'

@@ -60,6 +60,10 @@ html, body{background:#000000; color:#ffffff;}
 .ss-sub-title .circle{background:#ffffff;}
 
 
+/* Special List */
+.ss-list-01 .list-wrapper{background:var(--p-color);}
+
+
 /* Special Card 01 */
 .ss-card-01{border-color:#ffffff1a;}
 .ss-card-01 .icon > svg{fill:#f7e0c7;}
